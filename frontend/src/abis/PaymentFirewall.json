@@ -1,0 +1,34 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "trustlineValidationEngineLogic",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "trustlineValidationEngineProxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "destination",
+          "type": "address"
+        }
+      ],
+      "name": "payEthers",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]
+}
+

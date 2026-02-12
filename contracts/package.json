@@ -1,0 +1,29 @@
+{
+  "name": "@sdk-example/contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts using Trustline EVMSDK",
+  "scripts": {
+    "compile": "hardhat compile",
+    "compile:forge": "forge build",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:forge": "forge script script/Deploy.s.sol:DeployPaymentFirewall --broadcast",
+    "deploy:forge:local": "forge script script/Deploy.s.sol:DeployPaymentFirewall --broadcast --fork-url http://localhost:8545",
+    "test": "hardhat test",
+    "test:forge": "forge test",
+    "copy-abi": "ts-node scripts/copy-abi.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@trustline.id/evmsdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "hardhat": "^2.28.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
+
